@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Timeline</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="1.css">
+  <link rel="icon" href="img/arasaka_logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+
+
+
+
+
+<body>
+
+<!--Partie superieur de la page, indentique à chaque page-->
+<div class="jumbotron" style="margin-bottom: 0px"> 
+  <div class="row">
+
+    <div class="col" style="align-content: left;">
+      <img style="margin-top:-30px;" src="img/truepictureofme.jpg" width="40%" height="auto">
+      <p>Kerrian Garat<br>18 ans</p>
+    </div>
+
+    <div class="col" style="text-align: center; align-content: center;">
+      <h1><strong>Kerrian Garat</strong></h1>
+      <p>CV en ligne</p>
+    </div>
+
+    <div class="col" style="text-align: center;">        
+     
+    </div>
+
+  </div> 
+</div>
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Nav</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+
+
+      <!--Nav Bar vers les differentes pages :-->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Accueil</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="page04.html">Cards</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link" href="page05.html" style="color:#3498db;">Timeline</a>
+      </li>  
+
+      <li class="nav-item">
+        <a class="nav-link" href="page06.html">Pompier</a>
+      </li>  
+
+
+    </ul>
+  </div>  
+</nav>
+
+<!--Script-->
+<script>
+function Afficher(id) 
+  {
+    var art = document.getElementById(id);
+  if(art.style.display == "none") {
+    art.style.display = "";
+  } else {
+    art.style.display = "none";
+  }
+  }
+</script>
+
+<br>
+
+<!--Code principal-->
+<div class="row" style="margin-left: 15px; margin-right: 15px;">
+
+  <div class="col">
+    <button class="form-control" onclick="Afficher('art1')">Collège</button>
+  </div>
+
+  <div class="col">
+    <button class="form-control" onclick="Afficher('art2')">Lycée</button>
+  </div>
+
+  <div class="col">
+    <button class="form-control" onclick="Afficher('art3')">IUT</button>
+  </div>
+
+</div>
+
+<br>
+
+<div class="timeline">
+  <article id="art1" style="display:none;">
+    <h2>Collège</h2>
+    <ul>
+      <li><span>Ville</span>Quintin</li>
+      <li><span>Période</span>2015-2019</li>
+      <li><span>Diplôme</span>DNB</li>
+      <li><span>Mention</span>Bien</li>
+    </ul>
+  </article>
+
+  <article id="art2" style="display:none;">
+    <h2>Lycée</h2>
+    <ul>
+      <li><span>Ville</span>Saint-Brieuc</li>
+      <li><span>Période</span>2019-2022</li>
+      <li><span>Diplôme</span>Bac STI2D, option SIN</li>
+      <li><span>Mention</span>Bien</li>
+    </ul>
+  </article>
+
+  <article id="art3" style="display:none;">
+    <h2>IUT</h2>
+    <ul>
+      <li><span>Ville</span>Saint-Malo</li>
+      <li><span>Période</span>2022-soon</li>
+      <li><span>Diplôme</span>BUT R&T</li>
+      <li><span>Mention</span></li>
+    </ul>
+  </article>
+</div>
+
+<div>
+  
+</div>
+
+
+
+
+
+<!--Parti basse-->
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p style="font-size:25px;">Curriculum Vitae</p>
+  <p style="font-size:15px;">developed by Kerrian Garat</p>
+  <p style="font-size:10px;" align="left"></p>
+</div>
+
+</body>
+</html>

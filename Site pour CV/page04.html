@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cards</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="icon" href="img/arasaka_logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+
+
+
+
+
+<body>
+
+<!--Partie superieur de la page, indentique à chaque page-->
+<div class="jumbotron" style="margin-bottom: 0px"> 
+  <div class="row">
+
+    <div class="col" style="align-content: left;">
+      <img style="margin-top:-30px;" src="img/truepictureofme.jpg" width="40%" height="auto">
+      <p>Kerrian Garat<br>18 ans</p>
+    </div>
+
+    <div class="col" style="text-align: center; align-content: center;">
+      <h1><strong>Kerrian Garat</strong></h1>
+      <p>CV en ligne</p>
+    </div>
+
+    <div class="col" style="text-align: center;">        
+     
+    </div>
+
+  </div> 
+</div>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Nav</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+
+
+      <!--Nav Bar vers les differentes pages :-->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Accueil</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="page04.html" style="color:#3498db;">Cards</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link" href="page05.html">Timeline</a>
+      </li>  
+
+      <li class="nav-item">
+        <a class="nav-link" href="page06.html">Pompier</a>
+      </li>  
+
+    </ul>
+  </div>  
+</nav>
+
+<!--Script-->
+<script>
+
+  function Afficher(id) 
+  {
+    var span = document.getElementById(id);
+  if(span.style.display == "none") {
+    span.style.display = "inline";
+  } else {
+    span.style.display = "none";
+  }
+  }
+
+</script>
+
+
+<br>
+
+<!--Code principal-->
+
+<div class="row" style="margin-left: 15px; margin-right: 15px;">
+
+  <div class="col">
+    <img src="img/arasaka_logo.png" width="100%" height="auto" onclick="Afficher('span1')">
+    <button class="form-control" type="button" onclick="Afficher('span1');">Les jeux vidéo</button>
+    <br>
+    <span id="span1" style="display:none;">
+      <p style="text-align: center;">
+        Je passe beaucoup de temps sur les jeux vidéo, nottament cela :
+        <ul>
+          <li>Minecraft</li><li>Cyberpunk 2077</li><li>League of Legend</li><li>Frostpunk</li><li>Subnautica</li><li>Apex legend</li><li>TES V : Skyrim</li><li>Clash of clans</li><li>Subnautica : Below Zero</li><li>Civilization VI</li><li>Humankind</li><li>ARK</li><li>Arma III</li><li>Bendy and the ink machine</li><li>The binding of Isaac</li><li>The escapist</li><li>The forest</li><li>Garry's mod</li><li> Halo MCC</li><li>MH World</li><li>New World</li><li>Et encore plus ...</li>
+        </ul>
+      </p>
+    </span>
+  </div>
+
+  <div class="col">
+    <img src="img/VSCode.png" width="100%" height="auto" onclick="Afficher('span2')">
+    <button class="form-control" type="button" onclick="Afficher('span2');">La programmation</button>
+    <br>
+    <span id="span2" style="display:none;">
+      <p style="text-align: center;">
+        J'aime beaucoup la programmation. J'ai appris à coder avec le C++, pour arduino. Maintenant, je code dans différent language, nottament python et java, ce qui me sert pour créer des petites choses dans Minecraft, qui tourne sous java.
+      </p>
+    </span>
+  </div>
+
+  <div class="col">
+    <img src="img/armee_logo.png" width="100%" height="auto" onclick="Afficher('span3')">
+    <button class="form-control" type="button" onclick="Afficher('span3');">Carrière militaire</button>
+    <br>
+    <span id="span3" style="display:none;">
+      <p style="text-align: center;">
+        Mon objectif à terme, est d'intégrer les Forces Armées. Si possible dans une spécialité réseaux. De nombreux poste sont à pourvoir dans ce domaine, aussi bien en tant qu'officier que sous officier.
+      </p>
+    </span>
+  </div>
+
+  <div class="col">
+    <img src="img/Covid.png" width="100%" height="auto" onclick="Afficher('span4')">
+    <button class="form-control" type="button" onclick="Afficher('span4');">Confinement</button>
+    <br>
+    <span id="span4" style="display:none;">
+      <p style="text-align: center;">
+       Le confinement est arrivé pendant mon année de seconde. Beaucoup de personne on détesté cette période, mais moi, j'ai plutôt apprécier. J'ai passer tout ce temps dans ma chambre avec mon PC. En tant que gros geek, c'est ce que je fais le reste de l'année, donc je fais partis des gens qui ont le moins été impacter par le covid.
+      </p>
+    </span>
+  </div>
+
+</div>
+<p style="text-align: center;">Cliquable</p>
+
+
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p style="font-size:25px;">Curriculum Vitae</p>
+  <p style="font-size:15px;">developed by Kerrian Garat</p>
+  <p style="font-size:10px;" align="left"></p>
+</div>
+
+</body>
+</html>
